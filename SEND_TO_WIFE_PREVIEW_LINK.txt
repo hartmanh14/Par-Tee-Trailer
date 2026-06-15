@@ -1,0 +1,11 @@
+Preview link on Hayden's computer:
+file:///C:/Users/Hayden/Claude/Projects/draft_website/index.html
+
+Note:
+This link works on Hayden's computer because it points to a local file. It will not open from another phone/computer unless the website is hosted online or the full website folder/zip is shared.
+
+Best message to send:
+"Here is the first draft of the mobile golf simulator trailer website. It is now focused on a golf-first launch, with group seating for normal events and a fundraiser desk/hub configuration for closest-to-the-pin or longest-drive competitions."
+
+For a true public link:
+Upload the draft_website folder to Netlify Drop, GitHub Pages, Render, or another static website host.

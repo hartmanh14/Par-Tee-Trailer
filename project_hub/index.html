@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Triple Play Internal Project Hub</title>
+    <meta
+      name="description"
+      content="Operating dashboard for launching Triple Play Mobile Golf: schedule, trailer build steps, outreach pipeline, vendors, documents, and risks."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#dashboard" aria-label="Triple Play Project Hub home">
+        <span>3P</span>
+          <strong>Internal Hub</strong>
+      </a>
+      <button class="menu-button" type="button" data-menu-toggle aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+        Menu
+      </button>
+      <nav id="nav" data-nav>
+        <a href="#schedule">Schedule</a>
+        <a href="#trailer">Trailer Build</a>
+        <a href="#outreach">Nonprofits</a>
+        <a href="#documents">Docs</a>
+        <a href="#risks">Risks</a>
+      </nav>
+    </header>
+
+    <main id="dashboard">
+      <section class="hero-panel">
+        <div>
+          <p class="eyebrow">Internal operations site - not customer-facing</p>
+          <h1>Triple Play launch hub</h1>
+          <p>
+            A private project-management site for tracking the launch from idea to paid bookings: validation, trailer
+            purchase, retrofit, insurance, nonprofit outreach, and the fundraiser pitch.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#schedule">Work the Plan</a>
+          <a class="button secondary" href="../draft_website/index.html">Open Separate Customer Site</a>
+          </div>
+        </div>
+        <aside class="status-card">
+          <span class="status-pill">Current strategy</span>
+          <strong>Start with a mobile golf simulator trailer.</strong>
+          <p>
+            Default layout: group golf lounge with built-in seating. Fundraiser layout: seating swapped for a sign-in
+            desk and management hub. Movie/gaming stay in Phase 2.
+          </p>
+        </aside>
+      </section>
+
+      <section class="dashboard-grid" aria-label="Project dashboard">
+        <article class="metric-card">
+          <span>Target launch path</span>
+          <strong>90 days</strong>
+          <small>Phase 0 validate, then Phase 1 build</small>
+        </article>
+        <article class="metric-card">
+          <span>Working budget</span>
+          <strong>$40,050</strong>
+          <small>Lean model before real quotes; cap target about $45K</small>
+        </article>
+        <article class="metric-card">
+          <span>Funding placeholder</span>
+          <strong>$20,050</strong>
+          <small>Assumes $20K owner cash until intake is complete</small>
+        </article>
+        <article class="metric-card warning">
+          <span>Do not spend until</span>
+          <strong>Go / no-go</strong>
+          <small>Interviews, quotes, tow capacity, and insurance ranges are closed</small>
+        </article>
+      </section>
+
+      <section class="panel split">
+        <div>
+          <p class="eyebrow">Immediate operating truth</p>
+          <h2>What matters next</h2>
+          <p>
+            The concept is promising but not validated. The fastest way to reduce risk is to finish owner constraints,
+            call real prospects, get trailer quotes, and prove the golf-first fundraiser offer before committing to a
+            trailer deposit.
+          </p>
+        </div>
+        <div class="gate-list">
+          <label><input type="checkbox" data-task="gate-owner-intake" /> Owner intake completed</label>
+          <label><input type="checkbox" data-task="gate-tow-rating" /> Tow vehicle and hitch ratings confirmed</label>
+          <label><input type="checkbox" data-task="gate-soft-commitments" /> 3 soft commitments or refundable deposits logged</label>
+          <label><input type="checkbox" data-task="gate-trailer-quotes" /> 3 trailer quotes received</label>
+          <label><input type="checkbox" data-task="gate-insurance" /> 2 insurance quote ranges received</label>
+          <label><input type="checkbox" data-task="gate-build-spec" /> Trailer build spec gate passed</label>
+        </div>
+      </section>
+
+      <section class="panel" id="schedule">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Schedule tracker</p>
+            <h2>90-day launch plan</h2>
+          </div>
+          <div class="toolbar" aria-label="Schedule filters">
+            <button type="button" class="chip is-active" data-filter="all">All</button>
+            <button type="button" class="chip" data-filter="P0">P0</button>
+            <button type="button" class="chip" data-filter="Validate">Validate</button>
+            <button type="button" class="chip" data-filter="Build">Build</button>
+          </div>
+        </div>
+        <div class="timeline" data-schedule-list></div>
+      </section>
+
+      <section class="panel" id="trailer">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Detailed build path</p>
+            <h2>Buying and retrofitting the trailer</h2>
+          </div>
+          <a class="button ghost" href="../05_vendor_shortlist_and_outreach.md">Open vendor emails</a>
+        </div>
+        <div class="build-board">
+          <article>
+            <span class="step-num">1</span>
+            <h3>Define hard constraints</h3>
+            <ul>
+              <li>Max cash at risk and monthly payment comfort.</li>
+              <li>Tow vehicle make, model, year, GCWR, GVWR, hitch, payload.</li>
+              <li>Storage location, security, shore power availability.</li>
+              <li>Launch deadline and minimum viable equipment package.</li>
+            </ul>
+          </article>
+          <article>
+            <span class="step-num">2</span>
+            <h3>Quote the trailer</h3>
+            <ul>
+              <li>Start with Midwest Trailer Factory in Troy.</li>
+              <li>Compare at least two marketplace/dealer alternatives.</li>
+              <li>Require interior height, ramp dimensions, empty weight, GVWR, payload, axle rating, and lead time.</li>
+              <li>Do not place a nonrefundable deposit until swing clearance and towing math pass.</li>
+            </ul>
+          </article>
+          <article>
+            <span class="step-num">3</span>
+            <h3>Prove golf layout</h3>
+            <ul>
+              <li>Confirm ball-to-screen distance, player-to-wall clearance, ceiling height, and launch monitor spacing.</li>
+              <li>Mock the group lounge seating and the removable fundraiser desk.</li>
+              <li>Decide where clubs, cables, projector, PC, HVAC, and generator live in transit.</li>
+              <li>Verify emergency exit and guest flow before finishes.</li>
+            </ul>
+          </article>
+          <article>
+            <span class="step-num">4</span>
+            <h3>Power, climate, and safety</h3>
+            <ul>
+              <li>Estimate loads for A/C, heat, projector, launch monitor, PC, lights, fans, and chargers.</li>
+              <li>Choose shore power, generator, or hybrid plan with safe cable routing.</li>
+              <li>Add fire extinguisher, CO detector, first-aid kit, ventilation plan, and tie-downs.</li>
+              <li>Have electrical work reviewed by qualified help before paid events.</li>
+            </ul>
+          </article>
+          <article>
+            <span class="step-num">5</span>
+            <h3>Install simulator system</h3>
+            <ul>
+              <li>Quote SkyTrak/SkyTrak+ and Uneekor-class options for mobile commercial use.</li>
+              <li>Pick hitting mat, impact screen, projector, enclosure/netting, PC/tablet, and software.</li>
+              <li>Test 30-minute sessions, driver swings, missed shots, and repeated setup/teardown.</li>
+              <li>Document calibration steps in the operating SOP.</li>
+            </ul>
+          </article>
+          <article>
+            <span class="step-num">6</span>
+            <h3>Make it bookable</h3>
+            <ul>
+              <li>Bind insurance and get COI process ready.</li>
+              <li>Draft booking agreement, waiver, cancellation, damage, and weather terms.</li>
+              <li>Finish website lead capture, scheduler, deposit flow, and quote templates.</li>
+              <li>Run two free/discounted demos before paid launch.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="outreach">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Fundraiser sales pipeline</p>
+            <h2>Nonprofits and community groups to pitch</h2>
+          </div>
+          <button type="button" class="button ghost" data-export>Export progress JSON</button>
+        </div>
+        <div class="pitch-box">
+          <h3>Simple pitch angle</h3>
+          <p>
+            "We bring a mobile golf simulator to your event and run a closest-to-the-pin or longest-drive challenge.
+            Your guests donate for attempts, sponsors fund prizes or the leaderboard, and the event gets an interactive
+            attraction that works even if the weather is rough."
+          </p>
+        </div>
+        <div class="prospect-table-wrap">
+          <table class="prospect-table">
+            <thead>
+              <tr>
+                <th>Status</th>
+                <th>Organization</th>
+                <th>Segment</th>
+                <th>Why pitch</th>
+                <th>Suggested ask</th>
+                <th>Link / next step</th>
+              </tr>
+            </thead>
+            <tbody data-prospect-list></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel" id="documents">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Generated file map</p>
+            <h2>Document library</h2>
+          </div>
+          <a class="button ghost" href="../PROJECT_STATUS.md">Open status file</a>
+        </div>
+        <div class="doc-grid">
+          <a href="../01_plan_summary.md"><strong>Plan Summary</strong><span>10-bullet alignment summary</span></a>
+          <a href="../02_90_day_execution_tracker.md"><strong>90-Day Tracker</strong><span>Phase 0-1 checklist</span></a>
+          <a href="../03_local_market_validation_worksheet.md"><strong>Market Validation</strong><span>Competitors, climate, interviews</span></a>
+          <a href="../04_lean_budget_break_even_model.xlsx"><strong>Budget Workbook</strong><span>Editable budget and break-even model</span></a>
+          <a href="../05_vendor_shortlist_and_outreach.md"><strong>Vendor Shortlist</strong><span>Trailer, simulator, wrap outreach emails</span></a>
+          <a href="../06_brand_brief_and_names.md"><strong>Brand Brief</strong><span>Name options and voice</span></a>
+          <a href="../07_booking_website_and_marketplace_listings.md"><strong>Website Plan</strong><span>Booking flow and listing drafts</span></a>
+          <a href="../08_ohio_legal_insurance_licensing_checklist.md"><strong>Legal Checklist</strong><span>Ohio entity, insurance, licensing</span></a>
+          <a href="../09_gap_analysis_and_solutions.md"><strong>Gap Analysis</strong><span>Open risks and solutions</span></a>
+          <a href="../LLM_HANDOFF_CONTEXT.md"><strong>LLM Handoff</strong><span>Context for future assistants</span></a>
+          <a href="../draft_website/index.html"><strong>Marketing Website</strong><span>Golf-first review site</span></a>
+          <a href="../shareable_photos/"><strong>Shareable Photos</strong><span>Phone-friendly images</span></a>
+        </div>
+      </section>
+
+      <section class="panel" id="risks">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Risk controls</p>
+            <h2>Rules before real money goes out</h2>
+          </div>
+        </div>
+        <div class="risk-grid">
+          <article><strong>No trailer deposit</strong><span>until tow capacity, swing clearance, payload, insurance quote range, and financing path are confirmed.</span></article>
+          <article><strong>No paid event</strong><span>until liability insurance is bound and booking terms are ready.</span></article>
+          <article><strong>No public movie offer</strong><span>unless Phase 2 is reactivated and public-performance licensing is resolved.</span></article>
+          <article><strong>No generator setup</strong><span>without CO/fire plan, ventilation, cable routing, and venue permission.</span></article>
+          <article><strong>No school/park event</strong><span>without venue approval, COI needs, parking plan, and supervision expectations.</span></article>
+          <article><strong>No optimistic payback claims</strong><span>until conservative/ramp cases are added to the workbook and validated by real demand.</span></article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <strong>Triple Play Internal Project Hub</strong>
+      <span>Separate from the customer-facing marketing site. Last built from project files on 2026-06-14.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
