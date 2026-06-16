@@ -1,6 +1,6 @@
 # LLM Handoff Context - Mobile Entertainment Trailer Launch
 
-Last updated: 2026-06-14  
+Last updated: 2026-06-15  
 Workspace: `C:\Users\Hayden\Documents\Codex\2026-06-14\files-mentioned-by-the-user-mobile`  
 Primary outputs folder: `C:\Users\Hayden\Documents\Codex\2026-06-14\files-mentioned-by-the-user-mobile\outputs`
 Synced user-access copy: `C:\Users\Hayden\Claude\Projects`
@@ -63,6 +63,7 @@ When assumptions conflict, do not silently choose the optimistic value. State th
 | `outputs/07_booking_website_and_marketplace_listings.md` | Website plan and marketplace drafts | Needs production flow, privacy/terms, movie-license disclaimers |
 | `outputs/08_ohio_legal_insurance_licensing_checklist.md` | Legal/insurance/licensing checklist | Good broad checklist; needs staged pre-spend/pre-demo/pre-paid ordering |
 | `outputs/09_gap_analysis_and_solutions.md` | Audit of gaps and solutions | Created after reviewing generated docs |
+| `outputs/10_market_desire_validation_guide.md` | Market desire validation guide | Use this to run the 30-day validation sprint before trailer deposit |
 | `outputs/PROJECT_STATUS.md` | Running status | Update after every meaningful change |
 | `outputs/draft_website/index.html` | Static review website | Golf-first version, not production-connected; fundraiser challenge section added |
 | `outputs/draft_website/styles.css` | Website styling | Supports golf-first layout and image showcase |
@@ -122,6 +123,7 @@ It is separate from the customer-facing website and should not be published as m
 - Pitch angle for fundraiser conversations.
 - Document library linking to generated files.
 - Risk-control rules before spending or paid events.
+- Link to `10_market_desire_validation_guide.md`.
 
 Important:
 - Progress is stored locally in the browser via `localStorage`; it is not a multi-user database.
@@ -180,10 +182,10 @@ The best next deliverables are:
 1. `10_owner_intake_and_decision_sheet.md`
    - Capture cash, financing, tow vehicle, risk tolerance, storage, launch deadline.
 
-2. `11_validation_scorecard_and_interview_script.md`
-   - Defines pass/fail criteria and gives call/interview scripts.
+2. Run `10_market_desire_validation_guide.md`
+   - Defines pass/fail criteria, interview scripts, smoke tests, fundraiser economics checks, and go/no-go scorecard.
 
-3. `12_trailer_build_spec_gate.md`
+3. `11_trailer_build_spec_gate.md`
    - Prevents buying a trailer that cannot support the concept.
 
 4. Workbook v2:
@@ -264,4 +266,4 @@ Workbook was inspected manually and through XML after `openpyxl` was unavailable
 
 If Hayden asks to continue, a strong next prompt is:
 
-"Create the owner intake sheet, validation scorecard/interview scripts, and trailer build spec gate. Then update the 90-day tracker and PROJECT_STATUS so Phase 0 has explicit go/no-go criteria before any trailer deposit."
+"Create the owner intake sheet and trailer build spec gate, then use `10_market_desire_validation_guide.md` to run the first validation sprint. Update the 90-day tracker and PROJECT_STATUS with real interview counts, quote results, and go/no-go evidence before any trailer deposit."
