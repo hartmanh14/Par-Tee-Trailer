@@ -64,6 +64,9 @@ When assumptions conflict, do not silently choose the optimistic value. State th
 | `outputs/08_ohio_legal_insurance_licensing_checklist.md` | Legal/insurance/licensing checklist | Good broad checklist; needs staged pre-spend/pre-demo/pre-paid ordering |
 | `outputs/09_gap_analysis_and_solutions.md` | Audit of gaps and solutions | Created after reviewing generated docs |
 | `outputs/10_market_desire_validation_guide.md` | Market desire validation guide | Use this to run the 30-day validation sprint before trailer deposit |
+| `outputs/render.yaml` | Render Blueprint | Deploys two separate static services from the repo |
+| `outputs/RENDER_DEPLOYMENT.md` | Render deployment guide | Explains Blueprint deployment and service separation |
+| `outputs/scripts/build-project-hub.sh` | Render build helper | Builds self-contained internal hub publish folder |
 | `outputs/PROJECT_STATUS.md` | Running status | Update after every meaningful change |
 | `outputs/draft_website/index.html` | Static review website | Golf-first version, not production-connected; fundraiser challenge section added |
 | `outputs/draft_website/styles.css` | Website styling | Supports golf-first layout and image showcase |
@@ -129,6 +132,27 @@ Important:
 - Progress is stored locally in the browser via `localStorage`; it is not a multi-user database.
 - Prospect contacts and nonprofit URLs should be confirmed before outreach.
 - The hub is for Hayden's internal management only.
+
+## Render Deployment State
+
+Render deployment files are in:
+- `outputs/render.yaml`
+- `outputs/RENDER_DEPLOYMENT.md`
+- `outputs/scripts/build-project-hub.sh`
+
+Blueprint services:
+- `par-tee-trailer-customer-site`: static site from `./draft_website`.
+- `par-tee-trailer-internal-hub`: static site built by `bash scripts/build-project-hub.sh`, published from `./render_build/project_hub`.
+
+The internal hub build copies the hub, generated docs, workbook, zip files, customer draft site, and shareable photos into one publish directory, then rewrites local `../` links to `./` links for Render.
+
+Render Blueprint deeplink:
+`https://dashboard.render.com/blueprint/new?repo=https://github.com/hartmanh14/Par-Tee-Trailer`
+
+Notes:
+- Render CLI was not installed locally when the Blueprint was created, so `render blueprints validate` was not run.
+- Both sites are static and do not need env vars, databases, workers, or cron jobs.
+- The internal hub must remain separate from the customer-facing site.
 
 ## Major Known Gaps
 

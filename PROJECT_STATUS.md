@@ -32,6 +32,7 @@ Last updated: 2026-06-15
 | Internal project management hub | `project_hub/index.html` | Draft complete |
 | Gap analysis and solutions | `09_gap_analysis_and_solutions.md` | Complete |
 | Market desire validation guide | `10_market_desire_validation_guide.md` | Complete |
+| Render deployment blueprint | `render.yaml` and `RENDER_DEPLOYMENT.md` | Draft complete |
 | LLM handoff context | `LLM_HANDOFF_CONTEXT.md` | Complete |
 
 ## Research Notes
@@ -63,6 +64,7 @@ Last updated: 2026-06-15
 11. Rework non-website planning docs to match the golf-first launch strategy and move movie/gaming into Phase 2.
 12. Use the internal project hub to track checklist progress, nonprofit outreach status, trailer build gates, and document links.
 13. Run the 30-day market desire validation sprint from `10_market_desire_validation_guide.md` before trailer deposit.
+14. Deploy the two static Render services from `render.yaml`: customer site and internal project hub.
 
 ## Open Questions For Hayden
 
@@ -82,6 +84,7 @@ Last updated: 2026-06-15
 - Website refocused on 2026-06-14 from all-in-one launch positioning to golf-first launch positioning. New AI-generated images added for hero golf trailer, group golf interior, and fundraiser hub configuration. JS syntax check passed after package updates.
 - Internal project hub created as a separate site from the customer-facing marketing website. It includes the 90-day schedule, trailer retrofit steps, risk gates, document library, and nonprofit/community outreach pipeline. JS syntax check passed.
 - Market desire validation guide added on 2026-06-15 with segment hypotheses, interview scripts, smoke tests, fundraiser economics tests, outreach tracker, objection log, and go/no-go scorecard.
+- Render Blueprint added on 2026-06-15 for two separate static sites: `par-tee-trailer-customer-site` from `draft_website` and `par-tee-trailer-internal-hub` from a self-contained build output.
 - The full output set has been synced for user access at `C:\Users\Hayden\Claude\Projects`; continue updating the workspace `outputs/` copy first, then resync.
 - Generated documents and website source were reviewed for gaps on 2026-06-14; the gap analysis and handoff context files were added.
 - Dashboard base case after correction:

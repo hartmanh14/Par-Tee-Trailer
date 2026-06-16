@@ -16,6 +16,7 @@ Internal launch package for a golf-first mobile simulator trailer business based
 - `draft_website/index.html` - customer-facing draft website.
 - `PROJECT_STATUS.md` - current status and next actions.
 - `LLM_HANDOFF_CONTEXT.md` - context for another LLM to continue the work.
+- `RENDER_DEPLOYMENT.md` - Render Blueprint deployment instructions.
 
 ## Key Files
 
@@ -30,3 +31,14 @@ Internal launch package for a golf-first mobile simulator trailer business based
 ## Important
 
 The `project_hub` site is internal only. Do not treat it as the customer-facing website.
+
+## Render Deployment
+
+This repo includes `render.yaml` for two separate Render static sites:
+
+- `par-tee-trailer-customer-site` serves `draft_website`.
+- `par-tee-trailer-internal-hub` serves a self-contained build of `project_hub`.
+
+Open the Blueprint flow:
+
+https://dashboard.render.com/blueprint/new?repo=https://github.com/hartmanh14/Par-Tee-Trailer

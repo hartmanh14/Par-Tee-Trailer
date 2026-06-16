@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: par-tee-trailer-customer-site
+    runtime: static
+    buildCommand: echo "Static customer site - no build step required"
+    staticPublishPath: ./draft_website
+
+  - type: web
+    name: par-tee-trailer-internal-hub
+    runtime: static
+    buildCommand: bash scripts/build-project-hub.sh
+    staticPublishPath: ./render_build/project_hub
